@@ -145,7 +145,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 32);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Palyer";
+            this.label4.Text = "Player";
             // 
             // BtnCharacter
             // 
