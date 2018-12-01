@@ -60,8 +60,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnCharacter = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnSignOut = new System.Windows.Forms.Button();
+            this.BtnExit = new System.Windows.Forms.Button();
             this.GBPlayers.SuspendLayout();
             this.GBChat.SuspendLayout();
             this.GBAction.SuspendLayout();
@@ -70,6 +70,7 @@
             // 
             // GBPlayers
             // 
+            this.GBPlayers.Controls.Add(this.BtnPlayer0);
             this.GBPlayers.Controls.Add(this.BtnPlayer15);
             this.GBPlayers.Controls.Add(this.BtnPlayer14);
             this.GBPlayers.Controls.Add(this.BtnPlayer13);
@@ -85,7 +86,6 @@
             this.GBPlayers.Controls.Add(this.BtnPlayer3);
             this.GBPlayers.Controls.Add(this.BtnPlayer2);
             this.GBPlayers.Controls.Add(this.BtnPlayer1);
-            this.GBPlayers.Controls.Add(this.BtnPlayer0);
             this.GBPlayers.Font = new System.Drawing.Font("TH Sarabun New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.GBPlayers.Location = new System.Drawing.Point(450, 10);
             this.GBPlayers.Name = "GBPlayers";
@@ -106,6 +106,7 @@
             this.BtnPlayer15.Text = "Player";
             this.BtnPlayer15.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer15.UseVisualStyleBackColor = true;
+            this.BtnPlayer15.Visible = false;
             // 
             // BtnPlayer14
             // 
@@ -119,6 +120,7 @@
             this.BtnPlayer14.Text = "Player";
             this.BtnPlayer14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer14.UseVisualStyleBackColor = true;
+            this.BtnPlayer14.Visible = false;
             // 
             // BtnPlayer13
             // 
@@ -132,6 +134,7 @@
             this.BtnPlayer13.Text = "Player";
             this.BtnPlayer13.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer13.UseVisualStyleBackColor = true;
+            this.BtnPlayer13.Visible = false;
             // 
             // BtnPlayer12
             // 
@@ -145,6 +148,7 @@
             this.BtnPlayer12.Text = "Player";
             this.BtnPlayer12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer12.UseVisualStyleBackColor = true;
+            this.BtnPlayer12.Visible = false;
             // 
             // BtnPlayer11
             // 
@@ -158,6 +162,7 @@
             this.BtnPlayer11.Text = "Player";
             this.BtnPlayer11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer11.UseVisualStyleBackColor = true;
+            this.BtnPlayer11.Visible = false;
             // 
             // BtnPlayer10
             // 
@@ -171,6 +176,7 @@
             this.BtnPlayer10.Text = "Player";
             this.BtnPlayer10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer10.UseVisualStyleBackColor = true;
+            this.BtnPlayer10.Visible = false;
             // 
             // BtnPlayer9
             // 
@@ -184,6 +190,7 @@
             this.BtnPlayer9.Text = "Player";
             this.BtnPlayer9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer9.UseVisualStyleBackColor = true;
+            this.BtnPlayer9.Visible = false;
             // 
             // BtnPlayer8
             // 
@@ -197,6 +204,7 @@
             this.BtnPlayer8.Text = "Player";
             this.BtnPlayer8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer8.UseVisualStyleBackColor = true;
+            this.BtnPlayer8.Visible = false;
             // 
             // BtnPlayer7
             // 
@@ -210,6 +218,7 @@
             this.BtnPlayer7.Text = "Player";
             this.BtnPlayer7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer7.UseVisualStyleBackColor = true;
+            this.BtnPlayer7.Visible = false;
             // 
             // BtnPlayer6
             // 
@@ -223,6 +232,7 @@
             this.BtnPlayer6.Text = "Player";
             this.BtnPlayer6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer6.UseVisualStyleBackColor = true;
+            this.BtnPlayer6.Visible = false;
             // 
             // BtnPlayer5
             // 
@@ -236,6 +246,7 @@
             this.BtnPlayer5.Text = "Player";
             this.BtnPlayer5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer5.UseVisualStyleBackColor = true;
+            this.BtnPlayer5.Visible = false;
             // 
             // BtnPlayer4
             // 
@@ -249,6 +260,7 @@
             this.BtnPlayer4.Text = "Player";
             this.BtnPlayer4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer4.UseVisualStyleBackColor = true;
+            this.BtnPlayer4.Visible = false;
             // 
             // BtnPlayer3
             // 
@@ -262,6 +274,7 @@
             this.BtnPlayer3.Text = "Player";
             this.BtnPlayer3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer3.UseVisualStyleBackColor = true;
+            this.BtnPlayer3.Visible = false;
             // 
             // BtnPlayer2
             // 
@@ -275,10 +288,12 @@
             this.BtnPlayer2.Text = "Player";
             this.BtnPlayer2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnPlayer2.UseVisualStyleBackColor = true;
+            this.BtnPlayer2.Visible = false;
             // 
             // BtnPlayer1
             // 
             this.BtnPlayer1.Font = new System.Drawing.Font("TH Sarabun New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.BtnPlayer1.Image = global::WerewolfClient.Properties.Resources.Icon_villager;
             this.BtnPlayer1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnPlayer1.Location = new System.Drawing.Point(126, 20);
             this.BtnPlayer1.Name = "BtnPlayer1";
@@ -292,6 +307,7 @@
             // BtnPlayer0
             // 
             this.BtnPlayer0.Font = new System.Drawing.Font("TH Sarabun New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.BtnPlayer0.Image = global::WerewolfClient.Properties.Resources.Icon_villager;
             this.BtnPlayer0.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnPlayer0.Location = new System.Drawing.Point(2, 20);
             this.BtnPlayer0.Name = "BtnPlayer0";
@@ -340,13 +356,16 @@
             // 
             // GBAction
             // 
+            this.GBAction.Controls.Add(this.BtnCharacter);
+            this.GBAction.Controls.Add(this.BtnSignOut);
+            this.GBAction.Controls.Add(this.BtnExit);
             this.GBAction.Controls.Add(this.BtnJoin);
             this.GBAction.Controls.Add(this.BtnAction);
             this.GBAction.Controls.Add(this.BtnVote);
             this.GBAction.Font = new System.Drawing.Font("TH Sarabun New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.GBAction.Location = new System.Drawing.Point(452, 551);
             this.GBAction.Name = "GBAction";
-            this.GBAction.Size = new System.Drawing.Size(352, 78);
+            this.GBAction.Size = new System.Drawing.Size(352, 140);
             this.GBAction.TabIndex = 3;
             this.GBAction.TabStop = false;
             this.GBAction.Text = "Action";
@@ -456,34 +475,37 @@
             // 
             this.BtnCharacter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCharacter.BackgroundImage")));
             this.BtnCharacter.Font = new System.Drawing.Font("TH Sarabun New", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCharacter.Location = new System.Drawing.Point(458, 635);
+            this.BtnCharacter.Location = new System.Drawing.Point(6, 89);
             this.BtnCharacter.Name = "BtnCharacter";
             this.BtnCharacter.Size = new System.Drawing.Size(100, 45);
             this.BtnCharacter.TabIndex = 15;
             this.BtnCharacter.Text = "Character";
             this.BtnCharacter.UseVisualStyleBackColor = true;
+            this.BtnCharacter.Click += new System.EventHandler(this.BtnCharacter_Click);
             // 
-            // button1
+            // BtnSignOut
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Font = new System.Drawing.Font("TH Sarabun New", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(576, 635);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 45);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnSignOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSignOut.BackgroundImage")));
+            this.BtnSignOut.Font = new System.Drawing.Font("TH Sarabun New", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSignOut.Location = new System.Drawing.Point(124, 89);
+            this.BtnSignOut.Name = "BtnSignOut";
+            this.BtnSignOut.Size = new System.Drawing.Size(100, 45);
+            this.BtnSignOut.TabIndex = 16;
+            this.BtnSignOut.Text = "Sign Out";
+            this.BtnSignOut.UseVisualStyleBackColor = true;
+            this.BtnSignOut.Click += new System.EventHandler(this.BtnSignOut_Click);
             // 
-            // button2
+            // BtnExit
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Font = new System.Drawing.Font("TH Sarabun New", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(700, 635);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 45);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "End";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnExit.BackgroundImage")));
+            this.BtnExit.Font = new System.Drawing.Font("TH Sarabun New", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExit.Location = new System.Drawing.Point(246, 89);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.Size = new System.Drawing.Size(100, 45);
+            this.BtnExit.TabIndex = 17;
+            this.BtnExit.Text = "Exit";
+            this.BtnExit.UseVisualStyleBackColor = true;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // MainForm
             // 
@@ -493,9 +515,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.ControlBox = false;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.BtnCharacter);
             this.Controls.Add(this.GBStatus);
             this.Controls.Add(this.GBAction);
             this.Controls.Add(this.GBChat);
@@ -551,8 +570,8 @@
         private System.Windows.Forms.Button BtnAction;
         private System.Windows.Forms.Button BtnPlayer1;
         private System.Windows.Forms.Button BtnCharacter;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnSignOut;
+        private System.Windows.Forms.Button BtnExit;
     }
 }
 

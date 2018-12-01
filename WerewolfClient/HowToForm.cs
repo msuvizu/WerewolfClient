@@ -33,8 +33,8 @@ namespace WerewolfClient
 
         private void BtnTh_Click(object sender, EventArgs e)
         {
-            English_Language(false);
             Thai_Language(true);
+            English_Language(false);
         }
 
         private void English_Language(bool Click)
