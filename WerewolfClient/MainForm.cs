@@ -26,6 +26,11 @@ namespace WerewolfClient
         private string _myRole;
         private bool _isDead;
         private List<Player> players = null;
+
+        private int playernumber;
+        //private Login _Login = new Login();
+        private HowToForm _HowTo = new HowToForm();
+
         public MainForm()
         {
             InitializeComponent();
@@ -34,8 +39,9 @@ namespace WerewolfClient
             {
                 this.Controls["GBPlayers"].Controls["BtnPlayer" + i].Click += new System.EventHandler(this.BtnPlayerX_Click);
                 this.Controls["GBPlayers"].Controls["BtnPlayer" + i].Tag = i;
+                playernumber++;
             }
-
+            
             _updateTimer = new Timer();
             _voteActivated = false;
             _actionActivated = false;
@@ -44,6 +50,7 @@ namespace WerewolfClient
             EnableButton(BtnVote, false);
             _myRole = null;
             _isDead = false;
+            PlayerNumber(2);
         }
 
         private void OnTimerEvent(object sender, EventArgs e)
@@ -397,6 +404,54 @@ namespace WerewolfClient
                 wcmd.Payloads = new Dictionary<string, string>() { { "Message", TbChatInput.Text } };
                 TbChatInput.Text = "";
                 controller.ActionPerformed(wcmd);
+            }
+        }
+
+        private void BtnCharacter_Click(object sender, EventArgs e)
+        {
+            _HowTo.Visible = true;
+        }
+
+        private void BtnSignOut_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Environment.Exit(0);
+            //Login.Visible = true;
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Environment.Exit(0);
+        }
+
+        private void PlayerNumber(int n = 2)
+        {
+            
+            switch (n)
+            {
+                case 2:
+                    break;
+                case 4:
+                    BtnPlayer2.Visible = true;
+                    BtnPlayer3.Visible = true;
+                    break;
+                default:
+                    BtnPlayer2.Visible = true;
+                    BtnPlayer3.Visible = true;
+                    BtnPlayer4.Visible = true;
+                    BtnPlayer5.Visible = true;
+                    BtnPlayer6.Visible = true;
+                    BtnPlayer7.Visible = true;
+                    BtnPlayer8.Visible = true;
+                    BtnPlayer9.Visible = true;
+                    BtnPlayer10.Visible = true;
+                    BtnPlayer11.Visible = true;
+                    BtnPlayer12.Visible = true;
+                    BtnPlayer13.Visible = true;
+                    BtnPlayer14.Visible = true;
+                    BtnPlayer15.Visible = true;
+                    break;
             }
         }
     }
